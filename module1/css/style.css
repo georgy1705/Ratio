@@ -715,6 +715,12 @@ footer {
     }
 }
 
+@media (min-width: 1920px) {
+    .testimonials__slider {
+        left: 35%;
+    }
+}
+
 @media (min-width: 991px) {
     .header__menu-link:hover {
         font-weight: 700;

@@ -130,6 +130,7 @@ a {
 }
 
 .save__content-title {
+    max-width: 645px;
     font-weight: 500;
     font-size: 80px;
     line-height: 110%;
@@ -197,6 +198,7 @@ a {
 
 .storage__content-title {
     display: flex;
+    max-width: 516px;
     align-items: center;
     font-weight: 500;
     font-size: 40px;
@@ -234,7 +236,8 @@ a {
 }
 
 .features__text {
-    margin-top: 50px;
+    max-width: 584px;
+    margin: 50px auto;
     font-weight: 500;
     font-size: 18px;
     line-height: 160%;

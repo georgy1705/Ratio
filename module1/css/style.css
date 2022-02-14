@@ -25,11 +25,11 @@ html, body {
     background: var(--main-background);
 }
 
-img {
+/* img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-}
+} */
 
 ul {
     padding-left: 0;
@@ -167,10 +167,6 @@ a {
     height: 468px;
 }
 
-.save__img img {
-    max-width: 885px;
-}
-
 .storage {
     margin-top: 199px;
 }
@@ -193,7 +189,8 @@ a {
 }
 
 .storage__img img {
-    max-width: 469px;
+    width: 100%;
+    object-fit: contain;
 }
 
 .storage__content-title {
@@ -427,10 +424,6 @@ a {
     margin-top: 478px;
 }
 
-.testimonials__slider-arrow {
-    margin-left: 0 auto;
-}
-
 .slider-counter__elem:not(:first-child) {
     margin-left: 10px;
     width: 5px;
@@ -451,16 +444,27 @@ a {
     align-items: center;
 }
 
+.visually-hidden {
+    visibility: hidden;
+}
+
+.slider-arrow__btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+}
+
 .slider-arrow__img {
     background: var(--background-color);
 }
 
-.slider-arrow__img:first-child {
+.slider-arrow__btn:first-child {
     width: 40px;
     margin-right: 20px;
 }
 
-.slider-arrow__img:last-child {
+.slider-arrow__btn:last-child {
     width: 20px;
 }
 
@@ -481,6 +485,7 @@ a {
 }
 
 .testimonials__slider-arrow {
+    margin-left: 0 auto;
     margin-right: 65px;
     box-sizing: border-box;
     display: inline-flex;
@@ -536,6 +541,9 @@ footer {
     font-size: 16px;
     line-height: 180%;
     letter-spacing: 0.01em;
+}
+
+.footer__content-mail ul li a {
     color: var(--title-color);
 }
 
@@ -603,7 +611,9 @@ footer {
     }
 
     .save__img img {
-        width: 470px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 
     .data .container {
@@ -674,11 +684,11 @@ footer {
     }
 
     .testimonials__slider-footer {
-        margin-top: 700px;
+        margin-top: 520px;
     }
 
     .testimonials .container {
-        height: 950px;
+        height: 800px;
     }
 
     .testimonials__title {
@@ -714,10 +724,6 @@ footer {
 
     .header__menu-links {
         margin-left: 60px;
-    }
-
-    .save__img img {
-        width: 260px;
     }
 }
 

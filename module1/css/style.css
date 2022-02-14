@@ -635,6 +635,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .header__wrap {
+        margin-left: 30px;
+    }
 
     .save .container {
         flex-wrap: wrap-reverse;
@@ -694,7 +697,7 @@ footer {
     .testimonials__slide-1 {
         display: flex;
         height: 300px;
-        margin: 88px 0px 0px 0px;
+        margin: 88px 10px 0px 0px;
     }
 
     .testimonials__slider-footer {
@@ -710,7 +713,7 @@ footer {
     }
 
     .header__menu-links {
-        margin-left: 85px;
+        margin-left: 60px;
     }
 
     .save__img img {
@@ -719,6 +722,10 @@ footer {
 }
 
 @media (max-width: 320px) {
+    .header__wrap {
+        margin-left: 10px;
+    }
+
     .testimonials__slide-1 {
         max-width: 270px;
         height: 450px;

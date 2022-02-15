@@ -20,9 +20,10 @@ html, body {
     scroll-behavior: smooth;
     font-size: 14px;
     color: var(--main-color);
-    font-family: 'Ubuntu', sans-serif;    
+    font-family: 'Ubuntu', sans-serif;
     font-weight: normal;
     background: var(--main-background);
+/* не указана минимальная ширина для страницы   */
 }
 
 /* img {
@@ -49,6 +50,7 @@ a {
 }
 
 .container {
+    /* ширину надо задавать 95%  или задавать внешние отступы, тогда контент в контейнере не будет "прилипать" к краям страницы */
     width: 100%;
     min-width: 320px;
     max-width: 1130px;
@@ -75,7 +77,7 @@ a {
     display: flex;
     align-items: center;
     margin-top: 62px;
-    
+
 }
 
 .header__logo {
@@ -111,6 +113,7 @@ a {
     font-weight: 500;
     font-size: 16px;
     color: var(--main-color);
+    /* https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
     transition: color 0.3 ease 0s;
 }
 
@@ -339,6 +342,7 @@ a {
 }
 
 .testimonials__title {
+    /*  0px без px */
     padding: 109px 0px 0px 93px;
     font-weight: 500;
     font-size: 40px;
@@ -485,6 +489,7 @@ a {
 }
 
 .testimonials__slider-arrow {
+    /* ??? margin-left или margin, тут ошибка в значении стиля */
     margin-left: 0 auto;
     margin-right: 65px;
     box-sizing: border-box;
@@ -527,7 +532,7 @@ footer {
 .footer__content-rights {
     margin-top: 36px;
 }
-
+/* слишком большая вложенность, надо дать класс для li */
 .footer__content-adress ul li {
     font-weight: 500;
     font-size: 16px;
